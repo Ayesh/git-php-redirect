@@ -39,7 +39,7 @@ final class Redirector {
 		// FROM: https://git.php.net/?p=php-src.git;a=shortlog;h=refs/tags/php-8.0.0RC2
 		// TO:   https://github.com/php/php-src/releases/tag/php-8.1.0RC3
 		if (isset($params['h']) && preg_match('|refs/tags/(?<tag>[a-z0-9.-]+)|i', $params['h'], $matches)) {
-			return $url . '/releases/tags/' . $matches['tag'];
+			return $url . '/releases/tag/' . $matches['tag'];
 		}
 
 		// FROM: https://git.php.net/?p=php-src.git;a={tree,log,shortlog};h=refs/heads/master;hb=refs/heads/master
