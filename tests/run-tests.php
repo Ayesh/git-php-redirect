@@ -29,5 +29,5 @@ if ($fails !== 0) {
 	die(1);
 }
 
-echo "All tests passed successfully";
+echo "\r\n\e[32mAll tests passed successfully\e[0m\r\n";
 die(0);
